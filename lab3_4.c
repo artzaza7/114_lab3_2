@@ -10,12 +10,17 @@ int main()
     }
     for(long long i=2;i<=number&&number!=0&&number!=1;i++)
     {
+        if(save==i)
+        {
+            printf("%lld",save);
+            break;
+        }
         while (save%i==0)
         {
             save=save-1;
         }
     }
-    if(save!=0&&save!=1)
+    if(save!=0&&save!=1&&save!=2)
     {
         printf("%lld",save+1);
     }
