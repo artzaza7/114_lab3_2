@@ -5,7 +5,11 @@ int main()
     scanf("%lld",&number);
     if(number==1)
     {
-        printf("1\n");
+        printf("1");
+    }
+    if(number==0)
+    {
+        printf("0");
     }
     if(number%2==0&&number>1)
     {
