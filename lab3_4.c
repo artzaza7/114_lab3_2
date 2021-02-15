@@ -1,22 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int number;
-    scanf("%d",&number);
-    int save=number/2;
-    int give;
-    for(int i=2;i<=save;i++)
+    long long number;
+    scanf("%lld",&number);
+    if(number==1)
     {
-        if(number%i==0)
-        {
-            printf("%d",number-1);
-            give=1;
-            break;
-        }
+        printf("1\n");
     }
-    if (give!=1)
+    if(number%2==0&&number>1)
     {
-        printf("%d",number);
+        printf("%lld",number-1);
+    }
+    else
+    {
+        int save=number/2;
+        for(int i=3;i<=save;i++)
+        {
+            if(number%i!=0)
+            {
+                printf("%lld",number);
+                break;
+            }
+        }
     }
     return 0;
 }
