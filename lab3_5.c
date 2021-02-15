@@ -4,11 +4,6 @@ int main()
     int number,count=0,give=1;
     scanf("%d",&number);
     int save=number;
-    if(number==1||number==0)
-    {
-        int u=number;
-        printf("%d is not a Lucky Number.",u);
-    }
     for(int i=2;number>1;i++)
     {
         if(number%i==0)
@@ -17,6 +12,7 @@ int main()
                 break;
             number=number/i;
             give=i;
+            i=1;
             count++;
         }
     }
