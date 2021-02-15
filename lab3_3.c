@@ -3,7 +3,7 @@ int main()
 {
     int number,i=2;
     scanf("%d",&number);
-    while (number>0)
+    while (number>=1)
     {
         if(number%i==0)
         {
@@ -21,7 +21,5 @@ int main()
             break;
         }
     }
-
-    
     return 0;
 }
