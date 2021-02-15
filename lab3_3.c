@@ -3,23 +3,17 @@ int main()
 {
     int number,i=2;
     scanf("%d",&number);
-    while (number>=1)
+    if(number==1)
+        printf("%d\n",number);
+    while(number>1)
     {
-        if(number%i==0)
+        while(number%i==0)
         {
-            printf("%d ",i);
+            printf("%d\n",i);
             number=number/i;
-            printf("\n");
         }
-        else
-        {
             i++;
-        }
-        if(number==1)
-        {
-            printf("0");
-            break;
-        }
     }
+    printf("0");
     return 0;
 }
