@@ -7,13 +7,21 @@ int main()
     {
         printf("1");
     }
-    if(number==0)
+    else if(number==0)
     {
         printf("0");
     }
-    if(number%2==0&&number>1)
+    else if(number%2==0)
     {
-        printf("%lld",number-1);
+        if(number%5!=0&&number<10)
+        {
+            printf("%lld",number-1);
+        }
+        else
+        {
+            number=number-2;
+            printf("%lld",number-1);
+        }
     }
     else
     {
