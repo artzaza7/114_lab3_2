@@ -17,7 +17,7 @@ int main()
     }
     for(long long i=2;i<=save+1;i++)
     {
-        while ((save%i)==0)
+        while ((save+1%i)==0)
         {
             save=save-1;
         }
