@@ -1,23 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int number,check=2,count=0;
+    int number,count=0,give=1;
     scanf("%d",&number);
-    int save = number;
-    while (number>=0)
+    int save=number;
+    if(number==1||number==0)
     {
-        if(count==3)
+        int u=number;
+        printf("%d is not a Lucky Number.",u);
+    }
+    for(int i=2;number>1;i++)
+    {
+        if(number%i==0)
         {
-            break;
-        }
-        if(number%check==0)
-        {
-            number=number/check;
-            check++;
+            if(give==i)
+                break;
+            number=number/i;
+            give=i;
             count++;
         }
     }
-    if (count==3)
+    if(count==3)
     {
         printf("%d is a Lucky Number.",save);
     }
