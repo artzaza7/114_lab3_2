@@ -9,7 +9,7 @@ int main()
     {
         printf("%lld",number);
     }
-    for(long long i=2;i<=number;i++)
+    for(long long i=2;i<number;i++)
     {
         if(save%i==0)
         {
